@@ -1,10 +1,6 @@
 {
 	"Actor": {
-		"types": [
-			"character",
-			"npc",
-			"vehicle"
-		],
+		"types": ["character", "npc", "vehicle"],
 		"templates": {
 			"common": {
 				"details": {
@@ -64,63 +60,49 @@
 			}
 		},
 		"character": {
-			"templates": [
-				"common",
-				"creature",
-				"force"
-			],
+			"templates": ["common", "creature", "force"],
 			"charpoints": 0,
 			"specialabilities": []
 		},
 		"npc": {
-			"templates": [
-				"common",
-				"creature",
-				"force"
-			]
+			"templates": ["common", "creature", "force"]
 		},
 		"vehicle": {
-			"templates": [
-				"common"
-			]
+			"templates": ["common"]
 		}
 	},
 	"Item": {
-		"types": [
-			"armour",
-			"weapon",
-			"other"
-		],
+		"types": ["armour", "weapon", "other"],
 		"templates": {
 			"common": {
 				"type": "",
 				"name": "",
-				"description": "",
+				"notes": "",
 				"value": 0,
-				"weight": 0
+				"weight": 0,
+				"equipped": false
 			},
-			"damageTypes": {
-				"energy": 0,
-				"physical": 0
+			"vulnerable": {
+				"damagelevel": 0
 			}
 		},
 		"armour": {
-			"templates": [
-				"common",
-				"damageTypes"
-			],
+			"templates": ["common", "damage"],
+			"absorbenergy": 0,
+			"absorbphysical": 0
 		},
 		"weapon": {
-			"templates": [
-				"common",
-				"damageTypes"
-			],
-			"attr": "dex"
+			"templates": ["common", "damage"],
+			"attr": "dex",
+			"type": "melee",
+			"range": {
+				"short": 0,
+				"mid": 0,
+				"long": 0
+			}
 		},
 		"other": {
-			"templates": [
-				"common"
-			]
+			"templates": ["common"]
 		}
 	}
 }
