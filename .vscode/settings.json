@@ -1,0 +1,8 @@
+{
+	"files.insertFinalNewline": true,
+	"files.trimFinalNewlines": true,
+	"files.exclude": {
+		"**/node_modules": true,
+		"**/package-lock.json": true
+	}
+}

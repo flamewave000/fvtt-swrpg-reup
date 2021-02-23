@@ -1,0 +1,126 @@
+{
+	"Actor": {
+		"types": [
+			"character",
+			"npc",
+			"vehicle"
+		],
+		"templates": {
+			"common": {
+				"details": {
+					"name": "",
+					"type": "",
+					"age": "",
+					"size": "",
+					"weight": "",
+					"description": "",
+					"movement": 10
+				},
+				"attributes": {
+					"dex": 6,
+					"per": 6,
+					"kno": 6,
+					"str": 6,
+					"mec": 6,
+					"tec": 6
+				},
+				"credits": 0
+			},
+			"creature": {
+				"details": {
+					"gender": "",
+					"species": ""
+				},
+				"biography": {
+					"background": "",
+					"personality": "",
+					"objectives": ""
+				},
+				"languages": [],
+				"contacts": [],
+				"skills": [],
+				"advantages": [],
+				"disadvantages": [],
+				"objectives": [],
+				"status": {
+					"wounds": 0,
+					"mortal": false,
+					"stunned": false,
+					"incapac": false
+				}
+			},
+			"force": {
+				"force": {
+					"sensitive": false,
+					"points": 0,
+					"darkside": 0,
+					"attributes": {
+						"control": 0,
+						"sense": 0,
+						"alter": 0
+					},
+					"powers": []
+				}
+			}
+		},
+		"character": {
+			"templates": [
+				"common",
+				"creature",
+				"force"
+			],
+			"charpoints": 0,
+			"specialabilities": []
+		},
+		"npc": {
+			"templates": [
+				"common",
+				"creature",
+				"force"
+			]
+		},
+		"vehicle": {
+			"templates": [
+				"common"
+			]
+		}
+	},
+	"Item": {
+		"types": [
+			"armour",
+			"weapon",
+			"other"
+		],
+		"templates": {
+			"common": {
+				"type": "",
+				"name": "",
+				"description": "",
+				"value": 0,
+				"weight": 0
+			},
+			"damageTypes": {
+				"energy": 0,
+				"physical": 0
+			}
+		},
+		"armour": {
+			"templates": [
+				"common",
+				"damageTypes"
+			],
+		},
+		"weapon": {
+			"templates": [
+				"common",
+				"damageTypes"
+			],
+			"attr": "dex"
+		},
+		"other": {
+			"templates": [
+				"common"
+			]
+		}
+	}
+}

@@ -1,0 +1,35 @@
+{
+	"name": "swrpg-reup",
+	"title": "Star Wars - Roleplaying Game - Revised • Expanded • Updated",
+	"description": "The Boilerplate system for FoundryVTT!",
+	"version": "0.1.0",
+	"minimumCoreVersion": "0.7.9",
+	"compatibleCoreVersion": "0.7.9",
+	"templateVersion": 2,
+	"author": "flamewave000#6766",
+	"esmodules": [
+		"src/index.js"
+	],
+	"styles": [
+		"css/index.css"
+	],
+	"scripts": [],
+	"packs": [],
+	"languages": [
+		{
+			"lang": "en",
+			"name": "English",
+			"path": "lang/en.json"
+		}
+	],
+	"socket": false,
+	"initiative": "",
+	"gridDistance": 1,
+	"gridUnits": "m",
+	"primaryTokenAttribute": "status.wounds",
+	"secondaryTokenAttribute": "resources.points.char",
+	"url": "",
+	"manifest": "",
+	"download": "",
+	"license": "LICENSE"
+}
