@@ -1,0 +1,46 @@
+.grid {
+	display: grid;
+}
+
+.grid-2col {
+	grid-template-columns: 1fr 1fr;
+}
+
+.grid-3col {
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-4col {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid-5col {
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-6col {
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.swreup.sheet.actor div.attribute {
+	display: flex;
+	flex-flow: row nowrap;
+	padding: 1em;
+	align-items: baseline;
+	background-color: rgba(0, 0, 0, 0.1);
+	margin: 0.5em;
+	border-radius: 8px;
+}
+
+.swreup.sheet.actor div.attribute label {
+	flex: 1 0;
+	text-align: right;
+}
+
+.swreup.sheet.actor div.attribute input {
+	flex: 0 0 2em;
+}
+
+.swreup.sheet.actor div.attribute span {
+	flex: 0 0 auto;
+}

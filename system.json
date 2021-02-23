@@ -8,10 +8,10 @@
 	"templateVersion": 2,
 	"author": "flamewave000#6766",
 	"esmodules": [
-		"src/index.js"
+		"module/swreup.js"
 	],
 	"styles": [
-		"css/index.css"
+		"css/swreup.css"
 	],
 	"scripts": [],
 	"packs": [],

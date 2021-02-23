@@ -4,7 +4,6 @@
 		"templates": {
 			"common": {
 				"details": {
-					"name": "",
 					"type": "",
 					"age": "",
 					"size": "",

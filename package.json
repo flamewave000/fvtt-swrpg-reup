@@ -4,13 +4,13 @@
 	"description": "Star Wars - Roleplaying Game - Revised • Expanded • Updated",
 	"devDir": "/mnt/d/flame/Documents/FoundryVTT/Data/systems/",
 	"scripts": {
-		"build": "npx gulp --gulpfile=../gulpfile.js --cwd=./",
-		"start": "npx gulp watch --gulpfile=../gulpfile.js --cwd=./",
-		"clean": "npx gulp clean --gulpfile=../gulpfile.js --cwd=./",
-		"dev-build": "npx gulp dev --gulpfile=../gulpfile.js --cwd=./",
-		"dev-start": "npx gulp devWatch --gulpfile=../gulpfile.js --cwd=./",
-		"dev-clean": "npx gulp devClean --gulpfile=../gulpfile.js --cwd=./",
-		"release": "npx gulp zip --gulpfile=../gulpfile.js --cwd=./"
+		"build": "npx gulp",
+		"watch": "npx gulp watch",
+		"clean": "npx gulp clean",
+		"devbuild": "npx gulp dev",
+		"devwatch": "npx gulp devWatch",
+		"devclean": "npx gulp devClean",
+		"release": "npx gulp zip"
 	},
 	"author": "flamewave000#6766",
 	"license": "GPLv3",

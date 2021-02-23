@@ -1,4 +1,4 @@
-export default class CONFIG {
+export default class SWREUP {
 	static readonly ASCii = `
   ___________________________________________________  
  //    ___________________     ___       ______     \\\\ 
@@ -19,5 +19,5 @@ export default class CONFIG {
 
 	static readonly ATTACK_TYPES = ['melee', 'ranged'];
 	static readonly PHYSICAL_DAMAGE_TYPES = ['bludgeoning', 'slashing', 'piercing'];
-	static readonly DAMAGE_TYPES = [];
+	static readonly DAMAGE_TYPES: string[] = [];
 }
