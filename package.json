@@ -2,7 +2,6 @@
 	"name": "swrpg-reup",
 	"version": "1.0.0",
 	"description": "Star Wars - Roleplaying Game - Revised • Expanded • Updated",
-	"devDir": "/mnt/d/flame/Documents/FoundryVTT/Data/systems/",
 	"scripts": {
 		"build": "npx gulp",
 		"watch": "npx gulp watch",

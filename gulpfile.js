@@ -17,8 +17,10 @@ const TEMPLATES = 'templates/';
 const CSS = 'css/';
 
 var PACKAGE = JSON.parse(fs.readFileSync('./package.json'));
+var DEV_DIR = fs.readFileSync('dev').toString().trim();
 function reloadPackage(cb) { PACKAGE = JSON.parse(fs.readFileSync('./package.json')); cb(); }
-function DEV_DIST() { return PACKAGE.devDir + PACKAGE.name + '/'; }
+function DEV_DIST() { return DEV_DIR + PACKAGE.name + '/'; }
+console.log(DEV_DIST());
 
 String.prototype.replaceAll = function (pattern, replace) { return this.split(pattern).join(replace); }
 function pdel(patterns, options) { return () => { return del(patterns, options); }; }
@@ -44,7 +46,7 @@ function buildSource(keepSources, minifySources = false, output = null) {
 		return stream.pipe(gulp.dest((output || DIST) + SOURCE));
 	}
 }
-exports.step_buildSourceDev = buildSource(true);
+exports.step_buildSourceDev = buildSource(true, false, DEV_DIST());
 exports.step_buildSource = buildSource(false);
 exports.step_buildSourceMin = buildSource(false, true);
 
